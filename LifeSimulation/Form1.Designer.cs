@@ -124,7 +124,7 @@
             // 
             // nudScale
             // 
-            this.nudScale.Location = new System.Drawing.Point(30, 60);
+            this.nudScale.Location = new System.Drawing.Point(31, 49);
             this.nudScale.Maximum = new decimal(new int[] {
             25,
             0,
@@ -164,10 +164,11 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             // 
             // timer1
             // 
-            this.timer1.Interval = 50;
+            this.timer1.Interval = 40;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
@@ -179,6 +180,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
