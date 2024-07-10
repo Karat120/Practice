@@ -52,9 +52,33 @@ namespace LifeSimulation
             graphics = Graphics.FromImage(pictureBox1.Image);
             timer1.Start();
         }
+        private void NextGeneration()
+        {
+            graphics.Clear(Color.Black);
+            for (int i = 0; i < cols; i++)
+            {
+                for (int j = 0; j < rows; j++)
+                {
+                    if (field[i, j])
+                    {
+                        graphics.FillRectangle(Brushes.GreenYellow, i * scale, j * scale, scale, scale);
+                    }
+                }
+            }
+            pictureBox1.Refresh();
+        }
+        private void StopGame()
+        {
+            if (timer1.Enabled)
+                return;
+            timer1.Stop();
+            nudScale.Enabled =true;
+            nudDensite.Enabled = true;
+
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            NextGeneration();
         }
 
         private void bStart_Click(object sender, EventArgs e)
@@ -63,6 +87,11 @@ namespace LifeSimulation
         }
 
         private void bStop_Click(object sender, EventArgs e)
+        {
+            StopGame();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
