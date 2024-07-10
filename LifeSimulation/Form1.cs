@@ -114,19 +114,18 @@ namespace LifeSimulation
                     var neighboursCount = Neighbours2(x2, y2);
                     var hasLife2 = field2[x2, y2];
 
-                    if (!hasLife2 && neighboursCount == 3 && newField[x2, y2] != true)
+                    if (!hasLife2 && neighboursCount == 2 && newField2[x2, y2] != true)
                     {
 
                         rLife++;
-                        newField[x2, y2] = true;
+                        newField2[x2, y2] = true;
 
                     }
-                    else if (hasLife2 && (neighboursCount < 2 || neighboursCount > 3))
+                    else if (hasLife2 && (neighboursCount < 1 || neighboursCount > 2))
                     {
                         newField2[x2, y2] = false;
                         rDead++;
                     }
-
                     else
                     {
                         newField2[x2, y2] = field2[x2, y2];
@@ -136,9 +135,9 @@ namespace LifeSimulation
                     {
 
                         graphics.FillRectangle(Brushes.Crimson, x2 * scale, y2 * scale, scale - 1, scale - 1);
+
                         labRedDead.Text = $"Умерло {rDead}";
                         labRedLife.Text = $"Появилось {rLife}";
-
                     }
                 }
             }
@@ -214,9 +213,9 @@ namespace LifeSimulation
         {
             int count2 = 0;
 
-            for (int i = -1; i < 2; i++)
+            for (int i = 0; i < 2; i++)
             {
-                for (int j = -1; j < 2; j++)
+                for (int j = 0; j < 2; j++)
                 {
                     var col2 = (x + i + cols2) % cols2;                //проверка на выходы за границу
                     var row2 = (y + j + rows2) % rows2;
@@ -284,7 +283,7 @@ namespace LifeSimulation
                 if (validatePassed)
                 {
                     life++;
-                    field[x, y] = true;
+                    field2[x, y] = true;
                     
                     
                 }
@@ -300,7 +299,7 @@ namespace LifeSimulation
                 if (validatePassed) 
                 {
                     dead++;
-                    field[x, y] = false;
+                    field2[x, y] = false;
                     
                 }
                    
