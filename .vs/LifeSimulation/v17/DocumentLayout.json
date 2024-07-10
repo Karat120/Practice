@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u0439\\Desktop\\practic\\LifeSimulation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1749436-A094-4011-88FF-B4EE855A5577}|LifeSimulation\\LifeSimulation.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u0439\\desktop\\practic\\lifesimulation\\lifesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1749436-A094-4011-88FF-B4EE855A5577}|LifeSimulation\\LifeSimulation.csproj|C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u0439\\Desktop\\practic\\LifeSimulation\\lifesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1749436-A094-4011-88FF-B4EE855A5577}|LifeSimulation\\LifeSimulation.csproj|solutionrelative:lifesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1749436-A094-4011-88FF-B4EE855A5577}|LifeSimulation\\LifeSimulation.csproj|C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u0439\\Desktop\\practic\\LifeSimulation\\lifesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B1749436-A094-4011-88FF-B4EE855A5577}|LifeSimulation\\LifeSimulation.csproj|c:\\users\\\u0435\u0432\u0433\u0435\u043D\u0438\u0439\\desktop\\practic\\lifesimulation\\lifesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B1749436-A094-4011-88FF-B4EE855A5577}|LifeSimulation\\LifeSimulation.csproj|solutionrelative:lifesimulation\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,10 +28,14 @@
               "RelativeDocumentMoniker": "LifeSimulation\\Form1.cs",
               "ToolTip": "C:\\Users\\\u0415\u0432\u0433\u0435\u043D\u0438\u0439\\Desktop\\practic\\LifeSimulation\\LifeSimulation\\Form1.cs",
               "RelativeToolTip": "LifeSimulation\\Form1.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwE4AAAAVAAAA",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAkwFMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-10T09:26:43.533Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",

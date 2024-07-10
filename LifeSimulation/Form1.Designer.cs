@@ -38,6 +38,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.labDead = new System.Windows.Forms.Label();
+            this.labLife = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.labRedDead = new System.Windows.Forms.Label();
+            this.labRedLife = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -58,6 +64,12 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label6);
+            this.splitContainer1.Panel1.Controls.Add(this.labRedLife);
+            this.splitContainer1.Panel1.Controls.Add(this.labRedDead);
+            this.splitContainer1.Panel1.Controls.Add(this.label3);
+            this.splitContainer1.Panel1.Controls.Add(this.labLife);
+            this.splitContainer1.Panel1.Controls.Add(this.labDead);
             this.splitContainer1.Panel1.Controls.Add(this.bStop);
             this.splitContainer1.Panel1.Controls.Add(this.bStart);
             this.splitContainer1.Panel1.Controls.Add(this.nudDensite);
@@ -107,7 +119,7 @@
             this.nudDensite.TabIndex = 3;
             this.nudDensite.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nudDensite.Value = new decimal(new int[] {
-            2,
+            15,
             0,
             0,
             0});
@@ -140,7 +152,7 @@
             this.nudScale.TabIndex = 1;
             this.nudScale.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nudScale.Value = new decimal(new int[] {
-            4,
+            15,
             0,
             0,
             0});
@@ -168,8 +180,69 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 40;
+            this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // labDead
+            // 
+            this.labDead.AutoSize = true;
+            this.labDead.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labDead.Location = new System.Drawing.Point(13, 312);
+            this.labDead.Name = "labDead";
+            this.labDead.Size = new System.Drawing.Size(96, 26);
+            this.labDead.TabIndex = 6;
+            this.labDead.Text = "Смерть";
+            // 
+            // labLife
+            // 
+            this.labLife.AutoSize = true;
+            this.labLife.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labLife.Location = new System.Drawing.Point(13, 287);
+            this.labLife.Name = "labLife";
+            this.labLife.Size = new System.Drawing.Size(121, 25);
+            this.labLife.TabIndex = 7;
+            this.labLife.Text = "Появилось";
+            this.labLife.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(10, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(228, 25);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Статистика Зеленых";
+            // 
+            // labRedDead
+            // 
+            this.labRedDead.AutoSize = true;
+            this.labRedDead.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labRedDead.Location = new System.Drawing.Point(14, 432);
+            this.labRedDead.Name = "labRedDead";
+            this.labRedDead.Size = new System.Drawing.Size(92, 25);
+            this.labRedDead.TabIndex = 9;
+            this.labRedDead.Text = "Смерть";
+            // 
+            // labRedLife
+            // 
+            this.labRedLife.AutoSize = true;
+            this.labRedLife.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labRedLife.Location = new System.Drawing.Point(14, 407);
+            this.labRedLife.Name = "labRedLife";
+            this.labRedLife.Size = new System.Drawing.Size(121, 25);
+            this.labRedLife.TabIndex = 10;
+            this.labRedLife.Text = "Появилось";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(3, 382);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(222, 25);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Статистика красных";
             // 
             // Form1
             // 
@@ -204,6 +277,12 @@
         private System.Windows.Forms.Button bStop;
         private System.Windows.Forms.Button bStart;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label labLife;
+        private System.Windows.Forms.Label labDead;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labRedLife;
+        private System.Windows.Forms.Label labRedDead;
     }
 }
 
