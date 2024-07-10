@@ -1,0 +1,10 @@
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\bin\Debug\LifeSimulation.exe.config
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\bin\Debug\LifeSimulation.exe
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\bin\Debug\LifeSimulation.pdb
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.csproj.AssemblyReference.cache
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.Form1.resources
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.Properties.Resources.resources
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.csproj.GenerateResource.cache
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.exe
+C:\Users\Евгений\Desktop\practic\LifeSimulation\LifeSimulation\obj\Debug\LifeSimulation.pdb
